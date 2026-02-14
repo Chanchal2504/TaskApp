@@ -38,9 +38,12 @@ Create a database:
 CREATE DATABASE TaskDB;
 
 SET Environment Variables(Run in terminal, Only valid for current terminal[new Terminal,again env variables])
-$env:DB_USERNAME="your_db_username_here" \n
-$env:DB_PASSWORD="your_db_password_here" \n
-$env:JWT_SECRET_KEY="your_jwt_key_here" \n
+$env:DB_USERNAME="your_db_username_here"
+
+$env:DB_PASSWORD="your_db_password_here"
+
+$env:JWT_SECRET_KEY="your_jwt_key_here" 
+
 $env:DB_URL="jdbc:postgresql://localhost:5432/TaskDB"
 
 4️⃣ Run Backend
