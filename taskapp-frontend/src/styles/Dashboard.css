@@ -1,0 +1,148 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.dashboard-container {
+  width: 95%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+/* Form layout */
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #374151;
+}
+
+
+/* Button */
+.form-group button {
+  padding: 12px 18px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.form-group button:hover {
+  background: #4f46e5;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+.task-item:hover {
+  background: #f3f4f6;
+}
+
+.task-item span {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Delete button */
+.task-item button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background: #dc2626;
+}
+
+/* 🔥 RESPONSIVE SECTION */
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group button {
+    width: 100%;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .task-item button {
+    width: 100%;
+  }
+}
